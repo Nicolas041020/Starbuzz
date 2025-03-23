@@ -13,4 +13,9 @@
         <item>Capuccino</item>
         <item>Filter</item>
     </string-array>
+
+    <string-array name="meals">
+        <item>Breakfast</item>
+        <item>Afternoon Snack</item>
+    </string-array>
 </resources>
