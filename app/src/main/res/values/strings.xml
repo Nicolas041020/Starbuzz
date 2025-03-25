@@ -18,4 +18,10 @@
         <item>Breakfast</item>
         <item>Afternoon Snack</item>
     </string-array>
+
+    <string-array name="stores">
+        <item>Principal Location</item>
+        <item>Cold Location</item>
+        <item>Mountain Location</item>
+    </string-array>
 </resources>

@@ -26,11 +26,11 @@ public class StoreCategoryActivity extends AppCompatActivity {
                 android.R.layout.simple_list_item_1,
                 Store.stores);
 
-        ListView listDrinks = (ListView) findViewById(R.id.list_stores);
-        listDrinks.setAdapter(listAdapter);
+        ListView listStores = (ListView) findViewById(R.id.list_store);
+        listStores.setAdapter(listAdapter);
 
         AdapterView.OnItemClickListener itemClickListener = new AdapterView.OnItemClickListener(){
-            public void onItemClick(AdapterView<?> listDrinks,
+            public void onItemClick(AdapterView<?> listStores,
                                     View itemView,
                                     int position,
                                     long id){
@@ -40,6 +40,6 @@ public class StoreCategoryActivity extends AppCompatActivity {
 
             }
         };
-        listDrinks.setOnItemClickListener(itemClickListener);
+        listStores.setOnItemClickListener(itemClickListener);
     }
 }

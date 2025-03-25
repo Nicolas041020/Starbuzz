@@ -31,6 +31,9 @@ public class TopLevelActivity extends AppCompatActivity {
                 }else if(position==1){
                     Intent intent = new Intent(TopLevelActivity.this,MealsCategoryActivity.class);
                     startActivity(intent);
+                }else if(position==2){
+                    Intent intent = new Intent(TopLevelActivity.this,StoreCategoryActivity.class);
+                    startActivity(intent);
                 }
             }
         };

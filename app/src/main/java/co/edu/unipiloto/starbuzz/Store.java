@@ -7,9 +7,9 @@ public class Store {
     private int imageResourceId;
 
     public static final Store[] stores = {
-            new Store("Principal Location","delicious and classic meal",R.drawable.baconeggs),
-            new Store("Beach Location","delicious meal if you like to have a sweet breakfast",R.drawable.pancake),
-            new Store("Mountain Location","delicious and classic meal",R.drawable.baconeggs),
+            new Store("Principal Location","Near to the center of the city",R.drawable.principallocation),
+            new Store("Cold Location","Located in the coldest city of the world",R.drawable.coldlocation),
+            new Store("Mountain Location","Near to the top of the montain of the city",R.drawable.highlocation),
     };
 
     public Store(String name, String description, int imageResourceId) {
