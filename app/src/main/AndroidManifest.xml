@@ -20,16 +20,16 @@
             android:name=".StoreCategoryActivity"
             android:exported="false" />
         <activity
-            android:name=".SnackActivity"
+            android:name=".AdultoActivity"
             android:exported="false" />
         <activity
-            android:name=".SnackCategoryActivity"
+            android:name=".AdultoCategoryActivity"
             android:exported="false" />
         <activity
-            android:name=".BreakfastActivity"
+            android:name=".CachorroActivity"
             android:exported="false" />
         <activity
-            android:name=".BreakfastCategoryActivity"
+            android:name=".CachorroCategoryActivity"
             android:exported="false" />
         <activity
             android:name=".MealsCategoryActivity"

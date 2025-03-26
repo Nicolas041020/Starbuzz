@@ -8,9 +8,6 @@ import android.widget.ListView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class MealsCategoryActivity extends AppCompatActivity {
 
@@ -18,7 +15,7 @@ public class MealsCategoryActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_meals_category);
+        setContentView(R.layout.activity_dogs_category);
 
         AdapterView.OnItemClickListener itemClickListener = new AdapterView.OnItemClickListener(){
             public void onItemClick(AdapterView<?> listView,
@@ -26,10 +23,10 @@ public class MealsCategoryActivity extends AppCompatActivity {
                                     int position,
                                     long id){
                 if (position==0){
-                    Intent intent = new Intent(MealsCategoryActivity.this,BreakfastCategoryActivity.class);
+                    Intent intent = new Intent(MealsCategoryActivity.this, CachorroCategoryActivity.class);
                     startActivity(intent);
                 }else if(position==1){
-                    Intent intent = new Intent(MealsCategoryActivity.this,SnackCategoryActivity.class);
+                    Intent intent = new Intent(MealsCategoryActivity.this, AdultoCategoryActivity.class);
                     startActivity(intent);
                 }
             }

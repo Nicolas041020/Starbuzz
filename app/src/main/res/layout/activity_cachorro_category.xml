@@ -6,8 +6,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BreakfastCategoryActivity"
-    android:layout_marginTop="20dp">
+    tools:context=".CachorroCategoryActivity"
+    android:layout_margin="20dp">
 
     <ListView
         android:id="@+id/list_breakfast"

@@ -9,24 +9,21 @@ import android.widget.ListView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
-public class BreakfastCategoryActivity extends AppCompatActivity {
+public class AdultoCategoryActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_breakfast_category);
+        setContentView(R.layout.activity_adulto_category);
 
-        ArrayAdapter<Breakfast> listAdapter = new ArrayAdapter<>(
+        ArrayAdapter<Adulto> listAdapter = new ArrayAdapter<>(
                 this,
                 android.R.layout.simple_list_item_1,
-                Breakfast.breakfasts);
+                Adulto.ADULTOS);
 
-        ListView listDrinks = (ListView) findViewById(R.id.list_breakfast);
+        ListView listDrinks = (ListView) findViewById(R.id.list_snacks);
         listDrinks.setAdapter(listAdapter);
 
         AdapterView.OnItemClickListener itemClickListener = new AdapterView.OnItemClickListener(){
@@ -34,13 +31,12 @@ public class BreakfastCategoryActivity extends AppCompatActivity {
                                     View itemView,
                                     int position,
                                     long id){
-                Intent intent = new Intent(BreakfastCategoryActivity.this,BreakfastActivity.class);
-                intent.putExtra(BreakfastActivity.EXTRA_BREAKFASTID, (int) id);
+                Intent intent = new Intent(AdultoCategoryActivity.this, AdultoActivity.class);
+                intent.putExtra(AdultoActivity.EXTRA_SNACKID, (int) id);
                 startActivity(intent);
 
             }
         };
         listDrinks.setOnItemClickListener(itemClickListener);
     }
-
 }

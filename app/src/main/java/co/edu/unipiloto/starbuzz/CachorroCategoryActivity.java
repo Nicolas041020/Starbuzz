@@ -9,24 +9,21 @@ import android.widget.ListView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
-public class SnackCategoryActivity extends AppCompatActivity {
+public class CachorroCategoryActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_snack_category);
+        setContentView(R.layout.activity_cachorro_category);
 
-        ArrayAdapter<Snack> listAdapter = new ArrayAdapter<>(
+        ArrayAdapter<Cachorro> listAdapter = new ArrayAdapter<>(
                 this,
                 android.R.layout.simple_list_item_1,
-                Snack.snacks);
+                Cachorro.CACHORROS);
 
-        ListView listDrinks = (ListView) findViewById(R.id.list_snacks);
+        ListView listDrinks = (ListView) findViewById(R.id.list_breakfast);
         listDrinks.setAdapter(listAdapter);
 
         AdapterView.OnItemClickListener itemClickListener = new AdapterView.OnItemClickListener(){
@@ -34,12 +31,13 @@ public class SnackCategoryActivity extends AppCompatActivity {
                                     View itemView,
                                     int position,
                                     long id){
-                Intent intent = new Intent(SnackCategoryActivity.this,SnackActivity.class);
-                intent.putExtra(SnackActivity.EXTRA_SNACKID, (int) id);
+                Intent intent = new Intent(CachorroCategoryActivity.this, CachorroActivity.class);
+                intent.putExtra(CachorroActivity.EXTRA_BREAKFASTID, (int) id);
                 startActivity(intent);
 
             }
         };
         listDrinks.setOnItemClickListener(itemClickListener);
     }
+
 }

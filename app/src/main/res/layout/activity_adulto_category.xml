@@ -7,8 +7,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".SnackCategoryActivity"
-    android:layout_marginTop="20dp">
+    tools:context=".AdultoCategoryActivity"
+    android:layout_margin="20dp">
 
     <ListView
         android:id="@+id/list_snacks"

@@ -8,12 +8,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MealsCategoryActivity"
-    android:layout_marginTop="20dp">
+    android:layout_margin="20dp">
 
     <ListView
         android:id="@+id/list_meals"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:entries="@array/meals"/>
+        android:entries="@array/dogs"/>
 
 </LinearLayout>
