@@ -16,7 +16,7 @@ public class Cachorro {
                 "18 - 23 kg  150 - 165g \n" +
                 "23 - 34 kg  165 - 275g \n" +
                 "34 - 45 kg  275 - 400g \n" +
-                "+ 45 kg  400 - 495g ",R.drawable.pancake),
+                "+ 45 kg  400 - 495g ",R.drawable.agilitycachorro),
             new Cachorro("Chunky Cachorros","Comida calidad media para tu cachorro \n 1.5-3.5 kg  35-50g \n " +
                                     "3.5 - 5.5 kg  50 - 90g \n"+
                                     "5.5 - 9 kg  90 - 112g \n" +
@@ -25,7 +25,7 @@ public class Cachorro {
                                     "18 - 23 kg  150 - 165g \n" +
                                     "23 - 34 kg  165 - 275g \n" +
                                     "34 - 45 kg  275 - 400g \n" +
-                                    "+ 45 kg  400 - 495g ",R.drawable.baconeggs)
+                                    "+ 45 kg  400 - 495g ",R.drawable.chunkycachorro)
 
     };
 
